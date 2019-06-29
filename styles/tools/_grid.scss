@@ -1,0 +1,84 @@
+@import "mixins";
+
+// Grid
+$grid-medium: 768px;
+$grid-large: 960px;
+$grid-widescreen: 1200px;
+$grid-max-width: 1180px;
+$grid-gutter: 30px;
+
+// Breakpoint override for BEM Skel
+$bp-larger-than-mobile: "min-width: 420px";
+$bp-larger-than-phablet: "min-width: 540px";
+$bp-larger-than-tablet: "min-width: 768px";
+$bp-larger-than-desktop: "min-width: 960px";
+$bp-larger-than-desktophd: "min-width: 1200px";
+
+// Breakpoints used with the media-query mixin
+$small: "small";
+$medium: "medium";
+$medium-down: "medium-down";
+$medium-up: "medium-up";
+$large: "large";
+$large-down: "large-down";
+$large-up: "large-up";
+$widescreen: "widescreen";
+
+$breakpoints: (
+        $small "(max-width: #{$grid-medium - 1})",
+        $medium "(min-width: #{$grid-medium}) and (max-width: #{$grid-large - 1})",
+        $medium-down "(max-width: #{$grid-large - 1})",
+        $medium-up "(min-width: #{$grid-medium})",
+        $large "(min-width: #{$grid-large}) and (max-width: #{$grid-widescreen - 1})",
+        $large-down "(max-width: #{$grid-widescreen - 1})",
+        $large-up "(min-width: #{$grid-large})",
+        $widescreen "(min-width: #{$grid-widescreen})"
+);
+
+/*------------------------------------*\
+    GRID-GENERATOR
+\*------------------------------------*/
+
+/**
+ * Would you like Sass’ silent classes, or regular CSS classes?
+ */
+$use-silent-classes:    false !default;
+$class-type: if($use-silent-classes, unquote("%"), unquote("."));
+
+/**
+ * Define which namespaced breakpoints you would like to generate for each of
+ * widths
+ */
+$breakpoint-has-widths: ('small') !default;
+
+/**
+ * Create our width classes, prefixed by the specified namespace.
+ */
+@mixin device-type($namespace:"") {
+        $prefix: $class-type + $namespace;
+
+        #{$prefix}--1               { width: grid-column-width(1);  }
+        #{$prefix}--2               { width: grid-column-width(2);  }
+        #{$prefix}--3               { width: grid-column-width(3);  }
+        #{$prefix}--4               { width: grid-column-width(4);  }
+        #{$prefix}--5               { width: grid-column-width(5);  }
+        #{$prefix}--6               { width: grid-column-width(6);  }
+        #{$prefix}--7               { width: grid-column-width(7);  }
+        #{$prefix}--8               { width: grid-column-width(8);  }
+        #{$prefix}--9               { width: grid-column-width(9);  }
+        #{$prefix}--10              { width: grid-column-width(10); }
+        #{$prefix}--11              { width: grid-column-width(11); }
+        #{$prefix}--12              { width: 100%; margin-left: 0;  }
+}
+
+/**
+ * Our responsive classes
+ */
+@each $name in $breakpoint-has-widths {
+        @include media-query($name) {
+                @include device-type('#{$name}');
+        }
+}
+
+
+
