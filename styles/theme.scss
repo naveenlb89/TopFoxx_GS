@@ -2,6 +2,9 @@
 
 // Vendor
 @import "vendor/bemskel/main";
+@import "vendor/bulma/bulma";
+@import "~bootstrap-utilities"; // https://www.npmjs.com/package/bootstrap-utilities
+@import "vendor/fluid_typography/mixins";
 
 // Global
 @import "variables";
@@ -9,14 +12,17 @@
 @import "tools/mixins";
 @import "tools/grid";
 
-// Core
-@import "core/typography";
-@import "core/footer";
-@import "core/navigation";
-
 // Components
 @import "components/banner";
 @import "components/button";
 @import "components/icon";
 
+// Core
+@import "core/variables";
+@import "core/typography";
+@import "core/footer";
+@import "core/navigation";
+
 // Pages
+@import "pages/global";
+@import "pages/index";

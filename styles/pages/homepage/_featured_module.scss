@@ -1,0 +1,5 @@
+.featured-module__lists--img {
+  @include media-query($small) {
+    width: 50%;
+  }
+}

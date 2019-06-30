@@ -1,0 +1,101 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Archivo");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans&display=swap");
+
+$archivo: archivo;
+$butler: butler;
+$ptSans: "PT Sans", sans-serif;
+
+// Colors
+$white: #ffffff;
+$black: #000000;
+$darkgreen: #031e2f;
+$matterhorn: #505050;
+$bluewhale: #042b43;
+$bluecharcoal: #021623;
+$mercury: #e7e7e7;
+$alto: #d8d8d8;
+$very-light-pink: #cacaca;
+
+// Consolidated values
+$grey1: #f6f6f6 !default;
+$grey2: #e9e9e9 !default;
+$grey3: #cccccc !default;
+$grey4: #999999 !default;
+$grey5: #666666 !default;
+$grey6: #444444 !default;
+$grey7: #222222 !default;
+$grey8: #333333 !default;
+$grey9: #e6e2e2;
+$grey10: #d0d0d0;
+$grey-transparent-1: rgba(0, 0, 0, 0.65) !default;
+$grey-transparent-2: rgba(0, 0, 0, 0.25) !default;
+
+$light-gray: $grey1 !default;
+$slightly-darker-gray: $grey4 !default;
+$dark-gray: $grey6 !default;
+$darker-gray: $grey7 !default;
+$horizontal-rule-grey: $grey3 !default;
+$product-number-grey: $grey3 !default;
+$horizontal-border-grey: $grey4 !default;
+$menu-link: $grey6 !default;
+$close-menu-bg: $grey2 !default;
+$link-color: $dark-gray !default;
+$hr-border-color: $grey3 !default;
+
+$grid-gutter-width: 1.625rem !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 544px,
+  md: 769px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+$container-max-widths: (
+  md: 992px,
+  lg: 1200px,
+  xl: 1304px
+) !default;
+
+$border-radius: 0.1875rem !default;
+$border-radius-lg: $border-radius !default;
+$border-radius-sm: $border-radius !default;
+
+$btn-border-radius: 0 !default;
+
+$state-danger-text: #ffffff !default;
+$alert-success-text: #ffffff !default;
+
+// Font sizes
+$base16-14px: 0.875em !default;
+$font-nano: 0.75em;
+
+// Font Line Height
+$font-line-height-reduce: 0.8;
+$font-line-height-reset: 1;
+$font-line-height-xsmall: 1.11;
+$font-line-height-small: 1.21;
+$font-line-height-normal: 1.31;
+$font-line-height-medium: 1.41;
+$font-line-height-large: 1.51;
+$font-line-height-xlarge: 1.9;
+
+// Letter Spacing
+$letter-spacing-reduce: 0.5px;
+$letter-spacing-small: 0.9px;
+$letter-spacing-medium: 0.7px;
+$letter-spacing-reset: 1px;
+$letter-spacing-large: 1.5px;
+$letter-spacing-xxlarge: 2.4px;
+
+// Transition durations
+$transition-speed-slower: 1s;
+$transition-speed-slow: 600ms;
+$transition-speed-mid-slow: 500ms;
+$transition-speed-normal: 426ms;
+$transition-speed-medium: 320ms;
+$transition-speed-fast: 213ms;
+$transition-speed-faster: 107ms;
+$transition-speed-fastest: 54ms;

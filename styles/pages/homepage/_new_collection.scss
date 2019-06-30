@@ -1,0 +1,35 @@
+.new-collection__content {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  @include media-query($small) {
+    left: 50%;
+    top: 24%;
+  }
+  @include media-query($large-up) {
+    left: 21%;
+    top: 54%;
+  }
+  @media (max-width: 374px) {
+    top: 25%;
+  }
+}
+
+// Font-Size Set for header promo bar
+$min_width: 320px;
+$max_width: 991px;
+$min_font_1: 25px;
+$max_font_1: 45px;
+$min_font_2: 20px;
+$max_font_2: 30px;
+
+.new-collection__content--text-one {
+  @include fluid-type($min_width, $max_width, $min_font_1, $max_font_1);
+}
+
+.new-collection__content--text-two {
+  @include fluid-type($min_width, $max_width, $min_font_2, $max_font_2);
+}
+
+.new-collection-promo {
+  background: $grey1;
+}

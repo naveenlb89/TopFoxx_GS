@@ -1,0 +1,251 @@
+.font-primary-sans {
+  font-family: $archivo;
+}
+
+.font-primary-serif {
+  font-family: $butler;
+}
+
+.font-secondary-sans {
+  font-family: $ptSans;
+}
+
+[class*="heading"] {
+  font-family: $ptSans;
+  letter-spacing: 0.5px;
+}
+
+.heading {
+  &--hero {
+    font-size: 4.5rem;
+    line-height: 1;
+
+    @include media-query($small) {
+      font-size: 3rem;
+    }
+  }
+
+  &--2 {
+    font-size: 2rem;
+
+    @include media-query($small) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &--3 {
+    @include media-query($large-up) {
+      font-size: 3rem;
+      line-height: 0.5;
+    }
+
+    @include media-query($small) {
+      font-size: 2.2rem;
+      line-height: 1.31;
+    }
+  }
+
+  &--4 {
+    font-size: 1.5rem;
+  }
+
+  &--5 {
+    font-size: 1.75rem;
+  }
+  &--6 {
+    font-size: 1.7rem;
+    @include media-query($small) {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.paragraph--2 {
+  font-size: 0.875rem;
+  line-height: 1.71;
+  letter-spacing: 0.5px;
+}
+
+.body-type--milli {
+  font-size: 1.25rem;
+}
+
+.body-type--mid {
+  font-size: 1.5rem;
+}
+
+.body-type--regular {
+  font-size: 1rem; // 16px
+}
+
+.body-type--micro {
+  font-size: 0.875rem; // 14px
+}
+
+.body-type--nano {
+  font-size: 0.75rem;
+}
+
+.body-type--femto {
+  font-size: 0.625rem;
+}
+
+.body-type--centi {
+  font-size: 2rem;
+}
+
+.body-type--deci {
+  font-size: 2.5rem;
+}
+
+.body-type--deca {
+  font-size: 3rem;
+}
+
+// Global Alignment
+.align {
+  &--left {
+    text-align: left;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &--justify {
+    text-align: justify;
+  }
+}
+
+.txt {
+  &--light {
+    font-weight: 200;
+  }
+
+  &--normal {
+    font-weight: 400;
+  }
+
+  &--medium {
+    font-weight: 500;
+  }
+
+  &--bold {
+    font-weight: 600;
+  }
+
+  &--no-underline {
+    text-decoration: none;
+  }
+
+  &--underline {
+    text-decoration: underline;
+  }
+
+  &--strike {
+    text-decoration: line-through;
+  }
+
+  &--upper {
+    text-transform: uppercase;
+  }
+
+  &--lower {
+    text-transform: lowercase;
+  }
+
+  &--initial {
+    text-transform: initial;
+  }
+
+  &--nowrap {
+    white-space: nowrap;
+  }
+}
+
+.text-color--white {
+  color: $white;
+}
+.text-color--matterhorn {
+  color: $matterhorn;
+}
+
+.text-color--darkgreen {
+  color: $darkgreen;
+}
+
+.text-color--bluecharcoal {
+  color: $bluecharcoal;
+}
+
+.text-color--very-light-pink {
+  color: $very-light-pink;
+}
+
+// TEXT LINE HEIGHT
+
+.text-line--collapse {
+  line-height: 0;
+}
+
+.text-line--reduce {
+  line-height: $font-line-height-reduce;
+}
+
+.text-line--reset {
+  line-height: $font-line-height-reset;
+}
+
+.text-line--small {
+  line-height: $font-line-height-small;
+}
+
+.text-line--xsmall {
+  line-height: $font-line-height-xsmall;
+}
+
+.text-line--normal {
+  line-height: $font-line-height-normal;
+}
+
+.text-line--medium {
+  line-height: $font-line-height-medium;
+}
+
+.text-line--large {
+  line-height: $font-line-height-large;
+}
+
+.text-line--xlarge {
+  line-height: $font-line-height-xlarge;
+}
+
+// TEXT  LETTER SPACING
+
+.letter-spacing--small {
+  letter-spacing: $letter-spacing-reduce; // 0.5px
+}
+
+.letter-spacing--reset {
+  letter-spacing: $letter-spacing-reset; // 1px
+}
+
+.letter-spacing--medium {
+  letter-spacing: $letter-spacing-medium; // 0.7px
+}
+
+.letter-spacing--normal {
+  letter-spacing: $letter-spacing-small; // 0.9px
+}
+
+.letter-spacing--large {
+  letter-spacing: $letter-spacing-large; // 1.5px
+}
+
+.letter-spacing--xxlarge {
+  letter-spacing: $letter-spacing-xxlarge; // 2.4px
+}

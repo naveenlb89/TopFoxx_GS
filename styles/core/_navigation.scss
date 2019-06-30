@@ -1,0 +1,40 @@
+// Header Promo
+.header__promo {
+  height: 36px;
+  background-color: $black;
+  color: $white;
+}
+
+// Font-Size Set for header promo bar
+$min_width: 320px;
+$max_width: 920px;
+$min_font: 10px;
+$max_font: 16px;
+
+.header__promo--text {
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+}
+
+.navbar-link,
+.navbar-item {
+  font-weight: $weight-semibold;
+  color: $black;
+}
+
+.navbar-burger {
+  width: auto;
+  height: auto;
+}
+
+.navbar-link {
+  @include media-query($large-up) {
+    &:not(.is-arrowless)::after {
+      content: none;
+    }
+  }
+}
+
+// Nav Icons
+[class^="navbar-brand__icons"] {
+  color: $black;
+}
