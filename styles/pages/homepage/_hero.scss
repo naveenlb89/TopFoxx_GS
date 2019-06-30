@@ -1,0 +1,32 @@
+.hero-banner,
+.new-collection {
+  position: relative;
+  text-align: center;
+}
+
+.hero-banner__content {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  @include media-query($small) {
+    left: 50%;
+    top: 24%;
+  }
+  @include media-query($large-up) {
+    left: 80%;
+    top: 50%;
+  }
+  @media (max-width: 380px) {
+    top: 34%;
+  }
+}
+
+.hero-banner__content--cta {
+  @include media-query($small) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.hero-banner__content--text-subheading {
+  font-size: $font-nano;
+}
