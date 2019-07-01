@@ -5,13 +5,17 @@
     left: 50%;
     top: 24%;
   }
-  @include media-query($large-up) {
+  @include media-query($medium-up) {
     left: 21%;
     top: 54%;
   }
   @media (max-width: 374px) {
     top: 25%;
   }
+}
+
+.new-collection__content--cta {
+  background-color: $black;
 }
 
 // Font-Size Set for header promo bar
