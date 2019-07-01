@@ -18,6 +18,12 @@
   background-color: $black;
 }
 
+.new-collection-promo__text-three {
+  @include media-query($medium-up) {
+    width: 50%;
+  }
+}
+
 // Font-Size Set for header promo bar
 $min_width: 320px;
 $max_width: 991px;
