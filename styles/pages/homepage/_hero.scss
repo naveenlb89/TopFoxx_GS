@@ -11,12 +11,12 @@
     left: 50%;
     top: 24%;
   }
-  @include media-query($large-up) {
+  @include media-query($medium-up) {
     left: 80%;
     top: 50%;
   }
   @media (max-width: 380px) {
-    top: 34%;
+    top: 26%;
   }
 }
 

@@ -31,3 +31,9 @@ a {
   color: $white;
   font-size: 0.625rem;
 }
+
+.width-half-phablet {
+  @include media-query($small) {
+    width: 50%;
+  }
+}

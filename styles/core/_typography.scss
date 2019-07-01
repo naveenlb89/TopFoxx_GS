@@ -21,7 +21,7 @@
     line-height: 1;
 
     @include media-query($small) {
-      font-size: 3rem;
+      font-size: 2rem;
     }
   }
 
@@ -40,7 +40,7 @@
     }
 
     @include media-query($small) {
-      font-size: 2.2rem;
+      font-size: 1.5rem;
       line-height: 1.31;
     }
   }
@@ -56,6 +56,12 @@
     font-size: 1.7rem;
     @include media-query($small) {
       font-size: 1.5rem;
+    }
+  }
+  &--7 {
+    font-size: 2rem;
+    @include media-query($small) {
+      font-size: 0.8rem;
     }
   }
 }
