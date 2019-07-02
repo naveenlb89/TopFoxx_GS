@@ -1,0 +1,5 @@
+.brand-ambassador--desc {
+  @include media-query($medium-up) {
+    width: 50%;
+  }
+}
