@@ -13,4 +13,6 @@ $(document).ready(() => {
   $("#navigation").load("/partials/nav.html");
     // Load footer
   $("#footer").load("/partials/footer.html");
+   // Load Module 1 Sunglasses page (Hero)
+  $("#footer").load("/partials/demo.html"); 
 });

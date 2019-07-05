@@ -1,11 +1,3 @@
-.font-primary-sans {
-  font-family: $archivo;
-}
-
-.font-primary-serif {
-  font-family: $butler;
-}
-
 .font-secondary-sans {
   font-family: $ptSans;
 }
@@ -142,6 +134,10 @@
 
   &--bold {
     font-weight: 600;
+  }
+
+  &--bolder {
+    font-weight: 700;
   }
 
   &--no-underline {
