@@ -50,6 +50,7 @@
     &::placeholder {
       color: $black;
       font-size: 13px;
+      font-weight: 700;
     }
   }
 
@@ -74,5 +75,11 @@
       position: relative;
       top: 20px;
     }
+  }
+}
+
+.plp-bluelight {
+  .plp-subscribe__content--subheading-2 {
+    color: #ffffff;
   }
 }
