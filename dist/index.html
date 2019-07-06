@@ -255,11 +255,15 @@
     </div>
 
     <!-- Instagram -->
-    <div class="instagram-join text-center pt-5 pb-1 pb-md-5 container">
+    <div class="instagram-join text-center pt-5 pb-1 pb-md-5 container px-0">
       <div class="col col--12">
         <p class=" txt--bold body-type--mid">Join the Instagram</p>
         <p class="pt-2 pb-4 txt--bold">#topfoxx</p>
-        <img class="d-inline-block" src="/images/homepage/module_9.jpg">
+        <picture class="hero-banner__media">
+          <source media="(min-width: 768px)" srcset="/images/insta.png">
+          <source media="(min-width: 320px)" srcset="/images/insta_mobile.png">
+          <img class="d-inline-block" src="/images/insta.png">
+        </picture>
         <div>
         </div>
       </div>
