@@ -1,0 +1,10 @@
+.plp-sunglasses__grid {
+  display: flex;
+  flex-wrap: wrap;
+  .plp-sunglasses__grid--items {
+    width: 50%;
+    @include media-query($medium-up) {
+      width: 25%;
+    }
+  }
+}

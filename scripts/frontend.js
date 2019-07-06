@@ -14,5 +14,7 @@ $(document).ready(() => {
     // Load footer
   $("#footer").load("/partials/footer.html");
    // Load Module 1 Sunglasses page (Hero)
-  $("#footer").load("/partials/demo.html"); 
+  $("#plphero").load("/partials/plp/plp-hero.html");
+  // Load PLP Grid
+  $("#plpgrid").load("/partials/plp/plp-grid.html");
 });
