@@ -23,17 +23,13 @@ a {
   border: 0;
 }
 
-.homepage--cta {
+.shop--cta {
   border: 0;
   border-radius: 0;
   background-color: $black;
   font-weight: 600;
   color: $white;
   font-size: 0.625rem;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-
-// .width-half-phablet {
-//   @include media-query($small) {
-//     width: 50%;
-//   }
-// }

@@ -34,24 +34,50 @@
     </header>
 
     <!-- PLP Hero Banner -->
-    <div id="plphero" class="plp-sunglasses__hero"></div>
+    <div class="plp-main__hero">
+      <picture class="plp-hero__media">
+        <source media="(min-width: 768px)" srcset="/images/sunglasses/plp-hero-desktop.png">
+        <source media="(min-width: 320px)" srcset="/images/sunglasses/plp-hero-mobile.png">
+        <img class="plp-hero__media--img" src="/images/sunglasses/plp-hero-desktop.png" alt="Sunglasses Hero">
+      </picture>
+      <div class="plp-hero__content txt--bold text-center">
+        <p class="plp-hero__content--heading">Check out these new</p>
+        <p class="plp-hero__content--subheading text-line--small">Sunglasses</p>
+        <p class="d-none d-md-block plp-hero__content--subheading-2 mx-auto pt-lg-2 pb-lg-3">It is a long established fact that a reader will be
+          distracted by the readable content of a page when looking at its layout.</p>
+        <div class="d-none d-md-flex align-items-center justify-content-center pt-md-2">
+          <div class="plp-hero__content-parent mx-lg-4">
+            <img class="plp-hero__content--img" src="/images/sunglasses/plp-hero-glasses.png">
+            <p class="plp-hero__content--txt pt-lg-2">Polarized Glasses</p>
+          </div>
+          <div class="plp-hero__content-parent mx-lg-4">
+            <img class="plp-hero__content--img" src="/images/sunglasses/plp-hero-rating.png">
+            <p class="plp-hero__content--txt pt-lg-2">5 Star Rating</p>
+          </div>
+          <div class="plp-hero__content-parent mx-lg-4">
+            <img class="plp-hero__content--img" src="/images/sunglasses/plp-hero-design.png">
+            <p class="plp-hero__content--txt pt-lg-2">15+ Styles &#38; Design</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- PLP Grid Header and sponcer -->
-    <div class="plp-sunglasses__sponcer">
-      <div class="d-md-none plp-hero__header-mobile">
-        <p>Sunglasses</p>
-        <p>Filter +</p>
+    <div class="plp-main__sponcer">
+      <div class="d-flex d-md-none plp-hero__header-mobile mx-auto text-center px-3 px-sm-4 justify-content-between pt-3 pb-4">
+        <p class="plp-hero__header-mobile--txt body-type--nano txt--bold">Sunglasses</p>
+        <p class="plp-hero__header-mobile--txt body-type--nano txt--bold">Filter +</p>
       </div>
-      <div class="d-none d-md-block plp-hero__header-desktop">
-        <p class="text-center">&#34;Try the new Sunglasses from TopFoxx, you’ll look & feel fabul&#34;</p>
-        <div class="d-flex align-items-center px-md-5">
-          <div class="small--6 col col--4 px-md-5 px-3">
+      <div class="d-none d-md-block plp-hero__header-desktop my-5">
+        <p class="text-center txt--bold">&#34;Try the new Sunglasses from TopFoxx, you’ll look & feel fabulous&#34;</p>
+        <div class="row d-flex align-items-center px-md-5 pt-md-3 mx-auto plp-hero__header-desktop--logo">
+          <div class="col--4 px-3">
             <img src="/images/homepage/module_7_1.png">
           </div>
-          <div class="small--6 col col--4 px-md-5 px-3">
+          <div class="col--4 px-3">
             <img src="/images/homepage/module_7_2.png">
           </div>
-          <div class="small--6 col col--4 px-md-5 px-3">
+          <div class="col--4 px-3">
             <img src="/images/homepage/module_7_3.png">
           </div>
         </div>
@@ -59,7 +85,105 @@
     </div>
 
     <!-- Product Grid -->
-    <div id="plpgrid" class="plp-sunglasses__grid"></div>
+    <div class="plp-main__grid">
+      <div class="plp-sunglasses__grid--items col col--3 small--6 align--center mb-4 px-2 px-md-3">
+        <img src="/images/homepage/module_4_1.jpg">
+        <p class="body-type--micro pt-4 pb-2">Tortoise + Black</p>
+        <p>Matrix Sunnies</p>
+        <p class="body-type--micro py-2">$49.00</p>
+        <a class="btn shop--cta">Shop Now</a>
+      </div>
+      <div class="plp-sunglasses__grid--items col col--3 small--6  align--center mb-4 px-2 px-md-3">
+        <img src="/images/homepage/module_4_2.jpg">
+        <p class="body-type--micro pt-4 pb-2">Tortoise + Black</p>
+        <p>Matrix Sunnies</p>
+        <p class="body-type--micro py-2">$49.00</p>
+        <a class="btn shop--cta">Shop Now</a>
+      </div>
+      <div class="plp-sunglasses__grid--items col col--3 small--6  align--center mb-4 px-2 px-md-3">
+        <img src="/images/homepage/module_4_3.jpg">
+        <p class="body-type--micro pt-4 pb-2">Tortoise + Black</p>
+        <p>Matrix Sunnies</p>
+        <p class="body-type--micro py-2">$49.00</p>
+        <a class="btn shop--cta">Shop Now</a>
+      </div>
+      <div class="plp-sunglasses__grid--items col col--3 small--6  align--center mb-4 px-2 px-md-3">
+        <img src="/images/homepage/module_4_4.jpg">
+        <p class="body-type--micro pt-4 pb-2">Tortoise + Black</p>
+        <p>Matrix Sunnies</p>
+        <p class="body-type--micro py-2">$49.00</p>
+        <a class="btn shop--cta">Shop Now</a>
+      </div>
+      <div class="plp-sunglasses__grid--items col col--3 small--6  align--center mb-4 px-2 px-md-3">
+        <img src="/images/homepage/module_4_1.jpg">
+        <p class="body-type--micro pt-4 pb-2">Tortoise + Black</p>
+        <p>Matrix Sunnies</p>
+        <p class="body-type--micro py-2">$49.00</p>
+        <a class="btn shop--cta">Shop Now</a>
+      </div>
+      <div class="plp-sunglasses__grid--items col col--3 small--6  align--center mb-4 px-2 px-md-3">
+        <img src="/images/homepage/module_4_2.jpg">
+        <p class="body-type--micro pt-4 pb-2">Tortoise + Black</p>
+        <p>Matrix Sunnies</p>
+        <p class="body-type--micro py-2">$49.00</p>
+        <a class="btn shop--cta">Shop Now</a>
+      </div>
+      <div class="plp-sunglasses__grid--items col col--3 small--6  align--center mb-4 px-2 px-md-3">
+        <img src="/images/homepage/module_4_3.jpg">
+        <p class="body-type--micro pt-4 pb-2">Tortoise + Black</p>
+        <p>Matrix Sunnies</p>
+        <p class="body-type--micro py-2">$49.00</p>
+        <a class="btn shop--cta">Shop Now</a>
+      </div>
+      <div class="plp-sunglasses__grid--items col col--3 small--6  align--center mb-4 px-2 px-md-3">
+        <img src="/images/homepage/module_4_4.jpg">
+        <p class="body-type--micro pt-4 pb-2">Tortoise + Black</p>
+        <p>Matrix Sunnies</p>
+        <p class="body-type--micro py-2">$49.00</p>
+        <a class="btn shop--cta">Shop Now</a>
+      </div>
+
+    </div>
+
+    <!-- PLP New Description -->
+    <div class="plp-main__description text-center d-none d-md-block mx-auto txt--bold text-center">
+      <p class="plp-main__description--heading pt-3 pb-2">New Sunnies from TopFoxx </p>
+      <p class="body-type--micro plp-main__description--txt text-center mx-auto">It is a long established fact that a reader will be distracted by the readable content of a page
+        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+        distribution of letters, as opposed to using 'Content here, content here</p>
+    </div>
+
+    <!-- Subscribe -->
+    <div class="plp-main__subscribe d-none d-md-block pt-md-5">
+      <picture class="plp-subscribe__media">
+        <source media="(min-width: 768px)" srcset="/images/sunglasses/plp-subscribe-desktop.png">
+        <img class="plp-subscribe__media--img" src="/images/sunglasses/plp-subscribe-desktop.png" alt="Sunglasses Hero">
+      </picture>
+      <div class="plp-subscribe__content txt--bold text-center">
+        <p class="plp-subscribe__content--heading">Stay on the loop</p>
+        <p class="plp-subscribe__content--subheading text-line--small">Subscribe to our Email</p>
+        <p class="plp-subscribe__content--subheading-2 mx-auto pt-lg-2 pb-lg-3 body-type--micro">It is a long established fact
+          that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+        <div class="plp-subscribe__email mx-auto">
+          <input class="plp-subscribe__email--input" placeholder="Email Address">
+          <button class="plp-subscribe__email--btn">Get in</button>
+        </div>
+        <div class="d-md-flex align-items-center justify-content-center pt-md-2">
+          <div class="plp-subscribe__content-parent mx-lg-4">
+            <img class="plp-subscribe__content--img" src="/images/sunglasses/plp-subscribe-access.png">
+            <p class="plp-subscribe__content--txt pt-lg-2 body-type--micro">Exclusive Access</p>
+          </div>
+          <div class="plp-subscribe__content-parent mx-lg-4">
+            <img class="plp-subscribe__content--img" src="/images/sunglasses/plp-subscribe-gift.png">
+            <p class="plp-subscribe__content--txt pt-lg-2 body-type--micro">Amazing Gift</p>
+          </div>
+          <div class="plp-subscribe__content-parent mx-lg-4">
+            <img class="plp-subscribe__content--img" src="/images/sunglasses/plp-subscribe-notify.png">
+            <p class="plp-subscribe__content--txt pt-lg-2 body-type--micro">Early Notification</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Instagram -->
     <div class="instagram-join text-center pt-5 pb-1 pb-md-5 container">

@@ -1,0 +1,5 @@
+.plp-hero__header-desktop--logo {
+  @include media-query($medium-up) {
+    width: 40%;
+  }
+}

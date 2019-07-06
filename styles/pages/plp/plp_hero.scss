@@ -1,0 +1,71 @@
+// Font-Size Set for header promo bar
+$min_width: 600px;
+$max_width: 1024px;
+$min_font_1: 14px;
+$max_font_1: 20px;
+$min_font_2: 26px;
+$max_font_2: 50px;
+
+.plp-hero__content--heading {
+  font-size: 12px;
+  @include fluid-type($min_width, $max_width, $min_font_1, $max_font_1);
+}
+
+.plp-hero__content--subheading {
+  font-size: 28px;
+  @include media-query($medium-up) {
+    margin-top: -12px;
+  }
+  @include fluid-type($min_width, $max_width, $min_font_2, $max_font_2);
+}
+
+.plp-hero__content--subheading-2 {
+  font-size: 15px;
+  @include media-query($medium-up) {
+    width: 58%;
+  }
+  @include media-query($large-up) {
+    width: 42%;
+  }
+}
+
+.plp-main__hero {
+  position: relative;
+}
+
+.plp-hero__content {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  @include media-query($small) {
+    top: 50%;
+    left: 26%;
+  }
+  @include media-query($medium-up) {
+    left: 25%;
+    top: 48%;
+  }
+  @include media-query($large-up) {
+    top: 51%;
+    left: 29%;
+  }
+}
+
+.plp-hero__content--txt {
+  font-size: 13px;
+  width: 75px;
+}
+
+.plp-hero__content-parent {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.plp-hero__content--img {
+  width: 75px;
+  margin: 0 auto;
+}
+
+.plp-hero__media--img {
+  margin-left: auto;
+  margin-right: auto;
+}

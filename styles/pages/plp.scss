@@ -1,0 +1,15 @@
+@import "plp/plp_grid";
+@import "plp/plp_hero";
+@import "plp/plp_filters";
+@import "plp/plp_subscribe";
+
+.plp-main__description--heading {
+  font-size: 35px;
+}
+
+.plp-main__description--txt {
+  width: 70%;
+  @include media-query($widescreen) {
+    width: 55%;
+  }
+}

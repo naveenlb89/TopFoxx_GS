@@ -1,6 +1,9 @@
-.plp-sunglasses__grid {
+.plp-main__grid {
   display: flex;
   flex-wrap: wrap;
+  .col {
+    margin-left: 0;
+  }
   .plp-sunglasses__grid--items {
     width: 50%;
     @include media-query($medium-up) {
