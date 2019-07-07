@@ -3,7 +3,7 @@
 // Vendor
 @import "vendor/bemskel/main";
 @import "vendor/bulma/bulma";
-@import "~bootstrap-utilities"; // https://www.npmjs.com/package/bootstrap-utilities
+@import "~bootstrap-utilities"; // Bootstrap display utilities https://www.npmjs.com/package/bootstrap-utilities
 @import "vendor/fluid_typography/mixins";
 
 // Global
@@ -26,5 +26,7 @@
 
 // Pages
 @import "pages/global";
+@import "pages/hero";
 @import "pages/index";
 @import "pages/plp";
+@import "pages/legal";
