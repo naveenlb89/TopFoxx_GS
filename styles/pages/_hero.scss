@@ -4,17 +4,33 @@
 
 .global-hero__content {
   position: absolute;
-  left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  &.left {
-    left: 20%;
+
+  &.center {
+    left: 50%;
   }
+
+  &.left {
+    left: 22%;
+  }
+
   &.right {
-    left: 20%;
+    left: 74%;
   }
 }
 
+// Font-Size Set for hero banner for various pages, we are using the same classes globally for future re-use
+$min_width: 320px;
+$max_width: 1024px;
+$min_font: 25px;
+$max_font: 40px;
+
 .global-hero__content--heading {
-  font-size: 25px;
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+  @include media-query($small) {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

@@ -1,0 +1,12 @@
+// Font-Size Set for hero banner for various pages, we are using the same classes globally for future re-use
+$min_width: 320px;
+$max_width: 1024px;
+$min_font: 25px;
+$max_font: 55px;
+
+.gift {
+  .global-hero__content--heading {
+    color: $black;
+    @include fluid-type($min_width, $max_width, $min_font, $max_font);
+  }
+}
