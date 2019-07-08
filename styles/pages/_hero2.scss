@@ -1,0 +1,68 @@
+.global-main-2__hero {
+  position: relative;
+}
+
+.global-hero-2__content {
+  position: absolute;
+  top: 24%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $black;
+  width: 68%;
+  @include media-query($medium-up) {
+    color: $white;
+    top: 50%;
+    width: 48%;
+  }
+  @include media-query($widescreen) {
+    width: 30%;
+  }
+
+  &.center {
+    @include media-query($medium-up) {
+      left: 50%;
+    }
+  }
+
+  &.left {
+    @include media-query($medium-up) {
+      left: 29%;
+    }
+    @include media-query($widescreen) {
+      left: 20%;
+    }
+  }
+
+  &.right {
+    @include media-query($medium-up) {
+      left: 74%;
+    }
+  }
+}
+
+.hero-banner-2__content--cta {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 10px;
+}
+// Font-Size Set for hero banner 2 (Below the main hero) for various pages, we are using the same classes globally for future re-use
+$min_width: 320px;
+$max_width: 1024px;
+$min_font: 20px;
+$max_font: 40px;
+$min_font2: 11px;
+$max_font2: 20px;
+$min_font3: 9px;
+$max_font3: 13px;
+
+.global-hero-2__content--heading {
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+}
+
+.global-hero-2__content--subheading {
+  @include fluid-type($min_width, $max_width, $min_font2, $max_font2);
+}
+
+.global-hero-2__content--txt {
+  @include fluid-type($min_width, $max_width, $min_font3, $max_font3);
+}

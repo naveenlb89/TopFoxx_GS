@@ -1,0 +1,15 @@
+// Font-Size Set for header promo bar
+$min_width: 320px;
+$max_width: 767px;
+$min_font_1: 24px;
+$max_font_1: 35px;
+$min_font_2: 16px;
+$max_font_2: 22px;
+
+.instagram-join--heading {
+  @include fluid-type($min_width, $max_width, $min_font_1, $max_font_1);
+}
+
+.instagram-join--subheading {
+  @include fluid-type($min_width, $max_width, $min_font_2, $max_font_2);
+}

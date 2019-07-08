@@ -2,3 +2,13 @@
   border-top: 1.7px solid $black;
   width: 60px;
 }
+
+// Font-Size Set for header promo bar
+$min_width: 320px;
+$max_width: 767px;
+$min_font_1: 14px;
+$max_font_1: 20px;
+
+.media-links--text {
+  @include fluid-type($min_width, $max_width, $min_font_1, $max_font_1);
+}
