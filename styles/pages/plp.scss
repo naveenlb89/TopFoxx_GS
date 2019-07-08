@@ -17,3 +17,9 @@
     width: 55%;
   }
 }
+
+.plp-main__bluelight--story {
+  @include media-query($small) {
+    order: 2;
+  }
+}
