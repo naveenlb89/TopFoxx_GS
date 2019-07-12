@@ -1,0 +1,23 @@
+.form-contact {
+  max-width: 700px;
+  width: 100%;
+  color: $black;
+}
+
+.form-contact__main {
+  padding-left: 14px;
+  padding-right: 14px;
+  .form-contact__main--txt {
+    height: 58px;
+    background: #ebebeb;
+    border: 0;
+    border-radius: 0;
+    &::placeholder {
+      color: $black;
+      text-align: center;
+    }
+  }
+  textarea {
+    height: 109px;
+  }
+}

@@ -2,9 +2,20 @@
   font-family: $ptSans;
 }
 
+.sharp-sans-bold {
+  font-family: $sharpbold;
+}
+
+.sharp-sans-book {
+  font-family: $sharpbook;
+}
+
+.sharp-sans-semibold {
+  font-family: $sharpsemibold;
+}
+
 [class*="heading"] {
-  font-family: $ptSans;
-  letter-spacing: 0.5px;
+  font-family: $sharpsemibold;
 }
 
 .heading {

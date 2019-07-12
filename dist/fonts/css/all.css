@@ -4390,3 +4390,36 @@ readers do not read off random characters that represent icons */
 .fas {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
+
+@font-face {
+  font-family: 'sharp_sans_no2_boldregular';
+  src: url('../webfonts/sharp_sans_no2_bold-webfont.woff2') format('woff2'),
+  url('../webfonts/sharp_sans_no2_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'sharp_sans_no2_bookregular';
+  src: url('../webfonts/sharp_sans_no2_book-webfont.woff2') format('woff2'),
+  url('../webfonts/sharp_sans_no2_book-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'sharp_sans_no2_semiboldRg';
+  src: url('../webfonts/sharp_sans_no2_semibold-webfont.woff2') format('woff2'),
+  url('../webfonts/sharp_sans_no2_semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
