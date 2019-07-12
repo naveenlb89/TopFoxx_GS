@@ -10,9 +10,8 @@
 
 .plp-main__description--txt {
   @include media-query($medium) {
-
-  width: 70%;
-}
+    width: 70%;
+  }
   @include media-query($widescreen) {
     width: 55%;
   }
